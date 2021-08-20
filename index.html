@@ -5,6 +5,7 @@
     <title>智慧生產工程系(聯絡我們)-國立臺中科技大學</title>
     <link rel="canonical" href="./regular-html-version.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
     <style amp-custom>
      /*CSS樣式設定*/
 
@@ -13,6 +14,8 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+	<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
   </head>
   <body>
     <h1 style='display:none;'>聯絡我們</h1>
@@ -50,9 +53,15 @@
 傳真：04-2219-5609</span></span></span></h2>
 <h2 style="font-weight: normal; margin-top: 10px; margin-bottom: 10px; color: rgb(102, 102, 102); font-family: verdana, arial, verdana; text-align: center;"><span style="font-family: 微軟正黑體;"><span style="font-size: 1.125em;">E-mail：<a href="mailto:ipe00@nutc.edu.tw">ipe00@nutc.edu.tw</a></span></span></h2>
 <p>&nbsp;</p>
-<p style="text-align: center;"><iframe allowfullscreen="" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.3063716807583!2d120.68132372743192!3d24.150234458479538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzU4LjUiTiAxMjDCsDQwJzU4LjYiRQ!5e0!3m2!1szh-TW!2stw!4v1626117176239!5m2!1szh-TW!2stw" style="border:0;" width="600"></iframe></p>
+<p style="text-align: center;">
+<iframe allowfullscreen="" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.3063716807583!2d120.68132372743192!3d24.150234458479538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzU4LjUiTiAxMjDCsDQwJzU4LjYiRQ!5e0!3m2!1szh-TW!2stw!4v1626117176239!5m2!1szh-TW!2stw" style="border:0;" width="600"></iframe>
+</p>
 
 
-<button onclick='location.href="https://ipe.nutc.edu.tw/bin/home.php";' style='margin-left:auto;margin-right:auto;background-color:orange;color:white;font-size:18pt;'>回首頁</button>
+<a href="https://ipe.nutc.edu.tw/bin/home.php"> <button id='btn1' on='change:AMP.navigateTo({ url: "https://ipe.nutc.edu.tw/bin/home.php" })'>回首頁</button> </a>
+<style>
+ #btn1{margin-left:10px;margin-button:20px;background-color:orange;color:white;font-size:18pt;}
+ #btn1:hover{cursor:pointer;}
+</style>
   </body>
 </html>
